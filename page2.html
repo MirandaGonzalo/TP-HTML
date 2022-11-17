@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <!--
+      export class ContactosService {
+  resourceUrl: string;
+  constructor(private httpClient: HttpClient) {
+    //this.resourceUrl = environment.ConexionWebApiProxy + 'Articulos/';
+    this.resourceUrl = 'https://pymes2021.azurewebsites.net/api/contactos/';
+  }
+
+  get() {
+    let params = new HttpParams();
+    return this.httpClient.get(this.resourceUrl, { params: params });
+  }
+
+  getById(Id: number) {
+    return this.httpClient.get(this.resourceUrl + Id);
+  }
+
+  post(obj: Contactos) {
+    return this.httpClient.post(this.resourceUrl, obj);
+  }
+
+  put(Id: number, obj: Contactos) {
+    return this.httpClient.put(this.resourceUrl + Id, obj);
+  }
+
+  delete(Id) {
+    return this.httpClient.delete(this.resourceUrl + Id);
+  }
+}
+
+GUIA PARCIAL PAV
+
+1) Agregar el item al menu
+	- Esto es solo copiar html
+	- Después tengo que agregar el path en el app.module.ts y el componente en el NgModule junto con el import
+2) Copio todo el contenido de un html que ya este hecho
+	- Puedo copiar lo de Articulos 
+	- Este paso sigue dsp
+3) Seguramente me van a hacer trabajar con una api, entonces agrego el modelo y el servicio (para conectarnos con la api)
+	- Copio todo lo del articulos.component.ts y lo pego en el nuevo, cuidado con la definición de clase y @Component
+	- Si hice todo bien cuando seleccione el elemento nuevo del menú me debería aparecer el contenido html que copie
+	- Puedo copiar o no el css
+	- Cambio el título 
+4) Creamos el modelo, no es mas que una definición de clase
+	- TIENEN QUE TENER EL MISMO NOMBRE QUE LOS DE LA API
+5) Definimos el Servicio
+	- Es donde voy a hacer la consulta, inserción, modificación y baja
+	- Creo el servicio y copio el contenido de uno base
+	- Reemplazo en el importe de imports al modelo que me interesa tener
+	- Quito las funciones que no me interesan dependiendo del enunciado
+	- Cambio la url de donde voy a extraer los datos agregando la / al final
+	- Borro todos los parametros que recibia en el get mantengo la estructura del return
+6) Volvemos al html
+	- Si no me pide filtrar borro los inputs del form de filtrado
+	- Remplazo el nombre de las columnas en la tabla
+	- Si no pide acciones lo borro
+	- Me va a mostrar la base que tome como guía lo importante es terminar el html
+	- En la parte del formulario indicar las restricciones que están en el enunciado como la cantidad de caracteres
+7) Adaptar el archivo .ts
+	- Limpio la parte de imports
+	- Cambio los servicios en el constructor
+	- En el ngOnInit() se inicia un componente filtro, si no lo voy a utilizar lo borro.
+	- Empiezo a definir todas las variables que voy a traer cuando inicie el formulario
+	- Cuiado con las expresiones regulares [0-9]{11} - Números de 0 a 9 máximo 11 números
+	- La función Agregar queda igual, es genérica.
+	- Función Buscar() actualizo en base a la clase nueva -> El método get es el que use al final del paso 5
+	-  Cambio el suscribe a .suscribe((res:any) => {
+		this.Lista = res;
+	   });
+	- Luego en grabar lo mismo voy acomodando el código si es modificar dejo el put sino el post.
+	
+
+
+    -->
+  </body>
+</html>
